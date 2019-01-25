@@ -32,16 +32,21 @@ class GameObject {
 
 
 //characterstats//  
-  function CharacterStats (attrs1) {
-    GameObject.call(this,attrs1);
-    this.healthPoints = attrs1.healthPoints;
-    this.name = attrs1.name;
-  }
-  CharacterStats.prototype = Object.create(GameObject.prototype);
+  class CharacterStats extends GameObject {
+      constructor(attrs1) {
+        GameObject.call(this,attrs1);
+        this.healthPoints = attrs1.healthPoints;
+        this.name = attrs1.name;
+      }
+      takeDamage() {
+        return `${this.name} took damage.`;
+      }    
+      destroy() {
+          (attrs1);
+      }
+    
+      }
 
-  CharacterStats.prototype.takeDamage = function () {
-    return `${this.name} took damage.`;
-  }
 
 //humanoid//
 
