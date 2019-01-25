@@ -21,7 +21,7 @@ class Person {
         this.gender = Person.gender
     }
     speak() {
-        return `Hello my name is ${this.name}, I am from ${this.location}`;
+        return `Hello my name is ${name}, I am from ${location}`;
     }
 }
 
@@ -35,11 +35,11 @@ class Instructor extends Person {
     }
     //insert method//
     demo(subject) {
-        return `Today we are learning about ${this.subject}`;
+        return `Today we are learning about ${subject}`;
     }
     //insert method//
     grade(student, subject) {
-        return `${student.name} recieves a perfect score on ${this.subject}`;
+        return `${student.name} recieves a perfect score on ${subject}`;
     }
 }
 
@@ -56,10 +56,10 @@ class Student extends Person {
         return favList = this.favSubjects.map(subject => console.log(subject)); 
     }
     PRAssignment() {
-        return `${this.name} has submitted a PR for ${this.subject}`;
+        return `${name} has submitted a PR for ${subject}`;
     }
     sprintChallenge() {
-        return `${this.name}has begun sprint challenge on ${this.subject}`; 
+        return `${name}has begun sprint challenge on ${subject}`; 
     }
 }
 
@@ -72,10 +72,10 @@ class ProjectManagers extends Instructor {
     }
 //insert methos//
     standUp(channel) {
-        return `${this.name} announces to ${this.channel} @channel standy times!`;
+        return `${name} announces to ${channel} @channel standy times!`;
     }
     debugsCode(student, subject) {
-        return `${this.name} debugs ${student}'s code on ${subject}`;
+        return `${name} debugs ${student}'s code on ${subject}`;
     
     }
 }
