@@ -19,13 +19,16 @@ Prototype Refactor
 */
   
 //gameobject//
-function GameObject (attrs) {
-    this.createdAt = attrs.createdAt;
-    this.dimensions = attrs.dimensions;
-  }
-  GameObject.prototype.destroy = function () {
-    return `${this.name} was removed from the game.`;
-  }
+class GameObject {
+    constructor(attrs) {
+        this.createdAt = attrs.createdAt;
+        this.dimensions = attrs.dimensions;
+      }
+      destroy () {
+        return `${this.name} was removed from the game.`;
+      }
+}
+
 
 
 //characterstats//  
