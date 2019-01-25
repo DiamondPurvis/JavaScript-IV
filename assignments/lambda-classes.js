@@ -1,14 +1,38 @@
 // CODE here for your Lambda Classes
-const mint = new Person ({
-
+const mint = new Instructor ({
+    name: 'fire',
+    age: 12,
+    location: 'snellville',
+    gender: 'male',
+    favLanguage: 'java',
+    specialty: 'CSS',
+    catchPhrase: 'my toe',
 });
 
-const pepper = new Person ({
-
+const pepper = new Student({ 
+    name: 'wind',
+    age: 13,
+    location: 'dacula',
+    gender: 'female',
+    previousBackground: 'none',
+    className: 'cs4',
+    favSubjects: 'python',
 });
 
-const cumin = new Person({
+const cumin = new ProjectManagers({
+    name: 'earth',
+    age: 12,
+    location: 'grayson',
+    gender: 'female',
+    gradClassName: 'grad15';
+    favInstructor: 'menubar',
+});
 
+const water = new Person ({
+    name: 'water',
+    age: 12,
+    location: 'lawrenceville',
+    gender: 'male',
 });
 
 
