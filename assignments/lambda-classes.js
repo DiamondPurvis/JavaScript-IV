@@ -1,4 +1,16 @@
 // CODE here for your Lambda Classes
+const mint = new Person ({
+
+});
+
+const pepper = new Person ({
+
+});
+
+const cumin = new Person({
+
+});
+
 
 //Person//
 class Person {
