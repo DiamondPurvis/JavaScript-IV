@@ -34,33 +34,32 @@ class GameObject {
 //characterstats//  
   class CharacterStats extends GameObject {
       constructor(attrs1) {
-        GameObject.call(this,attrs1);
+        super(CharacterStats);
         this.healthPoints = attrs1.healthPoints;
         this.name = attrs1.name;
       }
       takeDamage() {
-        return `${this.name} took damage.`;
-      }    
-      destroy() {
-          (attrs1);
-      }
+        return `${this.name} took damage.`
     
       }
-
+    }
 
 //humanoid//
 
-function Humanoid (attrs2) {
-  CharacterStats.call(this,attrs2);
-  this.team = attrs2.team;
-  this.weapons = attrs2.weapons;
-  this.language = attrs2.language;
-}
-Humanoid.prototype = Object.create(CharacterStats.prototype);
-
-  Humanoid.prototype.greet = function () {
-    return `${this.name} offers a greeting in ${this.language}`;
+class Humanoid extends CharacterStats {
+  constructor(attrs2) {
+    
+    super(Humanoid);
+    this.team = attrs2.team;
+    this.weapons = attrs2.weapons;
+    this.language = attrs2.language;
   }
+  
+    greet() {
+      return `${this.name} offers a greeting in ${this.language}`;
+    }
+  }
+
  
 /*
   * Inheritance chain: GameObject -> CharacterStats -> Humanoid
